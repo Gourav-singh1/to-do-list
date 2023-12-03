@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
+}
+
+nav {
+  background: #f1ece6;
+}
+.input_placeholder::placeholder {
+  color: #969696;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+}
+ul {
+  padding: 0.99px;
+}
+.input_placeholder {
+  color: #000;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+input {
+  outline: 0;
+}
+.Add_button {
+  color: #f3f3f3;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.9px;
+  background-color: #76b7cd;
+}
+.bg_light {
+  background: #f1ece6;
+}
+
+.task_list {
+  color: #323232;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+  border-bottom: 1px solid #76b7cd;
+  padding-left: 9px;
+  word-break: break-all;
+}
+.task_list::after {
+  content: "";
+  background-image: url("../Images/Svg/unCheck_incon.svg");
+  height: 21px;
+  width: 21px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  z-index: 1;
+}
+
+.delete_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25px;
+  z-index: 1;
+  cursor: pointer;
+}
+.checked_list {
+  color: #c2c2c2;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+  border-bottom: 1px solid #76b7cd;
+  padding-left: 9px;
+  word-break: break-all;
+  text-decoration: line-through !important
+  ;
+}
+.checked_list::after {
+  content: "";
+  background-image: url("../Images/Svg/Check_icon.svg");
+  height: 21px;
+  width: 21px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  z-index: 1;
+}
+
+.max_800 {
+  max-width: 900px;
+}
+@media (min-width: 576px) {
+  .input_placeholder::placeholder {
+    font-size: 32px;
+  }
+  .input_placeholder {
+    font-size: 32px;
+  }
+  .Add_button {
+    font-size: 38px;
+  }
+  .bg_light {
+    background: #f1ece6;
+  }
+
+  .task_list {
+    font-size: 32px;
+    padding-left: 24px;
+  }
+  .task_list::after {
+    height: 29px;
+    width: 29px;
+  }
+  .checked_list {
+    font-size: 32px;
+    padding-left: 24px;
+  }
+  .checked_list::after {
+    height: 29px;
+    width: 29px;
+  }
+}
